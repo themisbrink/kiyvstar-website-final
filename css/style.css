@@ -227,6 +227,17 @@
   margin: 0 auto 10px;
 }
 
+.sponsoresCont {
+    z-index: 100;
+    background-color: cadetblue;
+}
+
+.spnsimage {
+    z-index: 100;
+    background-color:blueviolet;
+    height: 150px;
+}
+
 .ui-widget {
   font-family: "museo_sans_cyrl300",HelveticaNeue,Arial,Arial,Helvetica,sans-serif !important;
 }
