@@ -242,38 +242,53 @@
 /*    margin:5px;*/
 /*    margin-left: 10px;*/
 /*    max-width: 250px;*/
-/*    min-width: 250px;*/
+    min-width: 200px;
+    
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    height: 100%;
 }
 
 
-.ui-tooltip {
-   background-color:white; 
-    color: #4b4b4b; 
-    border: 1px solid #ccc;
-    padding: 15px;
-    font-size: 15px;
-}
 
-/* Tooltip */
+/*TOOLTIP STYLE 1*/
 .tooltip > .tooltip-inner {
     background-color: white; 
-    color: #4b4b4b; 
+    color: #343434; 
     border: 1px solid #ccc;
     padding: 15px;
     font-size: 15px;
+    box-shadow: 2px 2px 2px #ccc;
 }
 
-/* Tooltip on top */
-.tooltip-arrow {
-    border-top: 1px solid white;
-}
 .tooltip.top .tooltip-arrow{
     bottom:0;
     left:50%;
     margin-left:-5px;
     border-left:5px solid transparent;
     border-right:5px solid transparent;
-    border-top:5px solid #000
+    border-top:5px solid #ccc;
+    
+}
+
+/*TOOLTIP STYLE 2*/
+.tooltip > .tooltip-inner {
+    background-color: #219EFF; 
+    color: white; 
+    border: 1px solid #219EFF;
+    padding: 15px;
+    font-size: 15px;
+
+}
+
+.tooltip.top .tooltip-arrow{
+    bottom:0;
+    left:50%;
+    margin-left:-5px;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-top:5px solid #219EFF;
+
 }
 
 
