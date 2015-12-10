@@ -1,0 +1,383 @@
+<!doctype html>
+
+<head data-template-set="Kyivstar website">
+
+	<meta charset="utf-8">
+
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>SMS for Million | Kyivstar</title>
+
+     <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    
+	<meta name="title" content="Kyivstar website">
+	<meta name="description" content="Kyivstar website">
+
+	<meta name="google-site-verification" content="Kyivstar website">
+
+	<meta name="author" content="Kyivstar website">
+
+	<meta name="DC.title" content="Kyivstar website">
+	<meta name="DC.subject" content="Kyivstar website">
+	<meta name="DC.creator" content="Kyivstar website">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <!--<link rel="stylesheet" 
+href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> -->
+   <link rel="stylesheet" href="css/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$('a[href^="#"]').on('click',function (e) {
+				e.preventDefault();
+		
+				var target = this.hash;
+				var $target = $(target);
+		
+				$('html, body').stop().animate({
+					'scrollTop': $target.offset().top
+				}, 900, 'swing', function () {
+					window.location.hash = target;
+				});
+			});
+		});
+        
+       
+	
+		$(function() {
+			var icons = {
+				header: "ui-icon-circle-plus",
+				activeHeader: "ui-icon-circle-minus"
+			};
+			$("#faq-accordion").accordion({
+                collapsible: true,
+				icons: icons,
+				heightStyle: "content"			});
+
+			$("#winners-accordion").accordion({
+				collapsible: true,
+				icons: icons,
+				heightStyle: "content"
+			});
+
+		});
+	</script>
+
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+
+	<!-- Google Analytics script-->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-70296533-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="wrapper-container">
+            
+            
+            <div class="container">
+
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+              <a href="http://www.kyivstar.ua">
+             <img style="margin-bottom: 15px;" src="images/logo.png" >
+              </a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+             <!--  <li ><a href="#home">Home</a></li> -->
+              <li><a href="#prizes">Prizes</a></li>
+              <li><a href="#participate">How to participate</a></li>
+				<!--<li><a href="#winners">Winners</a></li> To be restored when the first winner will be declarated -->
+				<li><a href="#faq">FAQ</a></li>
+            <!--  <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li> -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index-en-v2.html">EN</a></li>
+              <li><a href="index-ru.html"><span style="color:#53c0fe;">RU</span></a></li>
+              <li><a href="index.html"><span style="color:#53c0fe;">UA</span></a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+      <!-- Main component for a primary marketing message or call to action -->
+      
+
+    </div> <!-- /container -->
+            
+            
+            
+			<header>
+				<div class="header">
+					
+					<div class="clearfix"></div>
+
+					<div class="header-icons" id="home">
+						 <div class="container">
+  
+                          <div class="row">
+                              <div class="col-sm-1"></div>
+                            <div class="col-sm-7 col-sm-offset-0">
+                                <h1 style="font-size: 46px;color: white;font-weight: 500;">SMS for Million</h1>
+                                 <h5 style="font-size: 19px;color: #FFDC00;font-weight: 500;">Live from 23.11.2015 to 20.03.2016</h5>
+                              <img style="margin-bottom: 15px;margin-top: 20px;" src="images/left-en.svg" id="left-image">
+                            </div>
+                            <div class="col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-2">
+                              <img src="images/mobile-en.svg" id="right-image">
+                            </div>
+                              <div class="col-sm-1"></div>
+
+                          </div>
+                        </div>
+						
+						
+					</div>
+					</div>
+					<div class="clearfix"></div>
+		<!--header-->
+
+			</header>
+
+			<div class="prizes-container">
+				<h3 class="titles" id="prizes">Prizes</h3>
+				<ul>
+					<li>
+                        <img class="prize-image-small" style="margin-bottom: 22px;" src="images/award1.svg">
+                    </br>
+						<p class="prize-title">100 000</p>
+						<p class="prize-title">UAH</p>
+						<p class="prize-subtitle">for two weekly winners</p>
+						
+					</li>
+					<li>
+                        <img class="prize-image" src="images/award2.svg">
+						<p class="prize-title">1 000 000</p>
+						<p class="prize-title">UAH</p>
+						<p class="prize-subtitle">for the top scorer</p>
+						
+					</li>
+					<li>
+                        <img class="prize-image-small" style="margin-bottom: 22px;" src="images/award1.svg">
+                          </br>
+						<p class="prize-title">100</p>
+						<p class="prize-title">UAH</p>
+						<p class="prize-subtitle">and many more prizes</p>
+						
+					</li>
+				</ul>
+				<div class="clearfix"></div>
+				<div class="main-text-container">
+					<p class="main-text" style="text-align: left;">Kyivstar’s SMS for Million campaign gives away the grand prize of UAH 1 000 000 on Sunday, March 20th 2016 to the top scorer.</p></br>
+					<p class="main-text" style="text-align: left;"><strong>Want more?</strong> From November 23th 2015 to March 16th 2016, twice a week (Monday 00:00:00 to Wednesday 23:59:59 and from Thursday 00:00:00 to Sunday 23:59:59) two winners get the prize of 100 000 UAH.</p></br>
+					<p class="main-text" style="text-align: left;"><strong>Is that all?</strong> No! 100 UAH, Djingles and coupon vouchers for famous department stores to be given to Kyivstar’s subscribers! Will you miss the chance?</p></br>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<!--prizes-->
+
+			<div class="participate-container">
+				<h3 class="titles" id="participate">How to participate</h3>
+				<div class="main-text-container">
+					<p>
+						<ul class="main-text">
+							<li data-type="num1"; style="text-align:left;"><span class="step2">1</span>Send YES to 900 and join the SMS campaign (cost of 1 SMS – UAH 7.50 including VAT and PF). Shortly after, you will receive a welcome message introducing to you the game and your first 20 points</li>
+							<br />
+							<li style="text-align:left;"><span class="step2">2</span>Right after, you will receive a message with one question and two possible answers, the one is correct and the other is wrong. You will have to send the number of the correct answer (either 1 or 2) to number 900 </li>
+							<br />
+							<li style="text-align:left;"><span class="step2">3</span>
+								In the following message, you will be informed that the last question you answered is either correct or not, the points earned and the next question is coming
+							</li>
+							<br />
+							<li style="text-align:left;"><span class="step2">4</span>Continue to answer questions correctly, gather points and get closer to the cash prizes </li>
+						</ul>
+
+					</p>
+				</div>
+			</div>
+			<!--participate-->
+<!--
+			<div class="winners-container">
+				<h3 class="titles" id="winners">Winners</h3>
+				<p class="main-text winners-disclaimer">ADDITIONAL INFORMATION: GRANT THORNTON LEGIS, a member firm of the network of independent member firms affiliated with Grant Thornton International, is engaged for parallel counting of scores accumulated by the Participants as a result of their quiz responses based on information obtained by the provider of the Promotional Campaign, for the purpose of determining the winners of the Promotional Campaign by the Provider of the Promotional Campaign</p>
+				<table cellpadding="0" cellspacing="0" width="80%" border="0" class="main-text">
+					<th>
+						<td width="38%">Date</td>
+						<td width="29%">MSISDN</td>
+						<td width="33%">Winner's name</td>
+					</th>
+				</table>
+				<div class="main-text-container-prizes" id="winners-accordion">
+					<h3 class="winner-item-title"> 100,000 UAH winners </h3>
+					<div>
+					  <p class="main-text winner-item-text">No winners yet</p>
+					</div>
+					<h3 class="winner-item-title"> 100 UAH winners </h3>
+					<div>
+					  <p class="main-text winner-item-text">No winners yet</p>
+					</div>
+
+				</div>
+
+			</div> -->
+			<!--prizes-->
+
+			<div class="faq-container">
+				<h3 class="titles" id="faq" style="margin-bottom: 50px;">FAQ</h3>
+
+
+				<div class="main-text-container-faq" id="faq-accordion">
+
+					<h3 class="blue faq-item-title">What is the duration of the campaign?</h3>
+					<div>
+						<p class="main-text faq-item-text">The Campaign "SMS for million" starts on the 23th of November 2015 at 00:00:01 and ends on 20th of March 2016 at 23:59:59. The total duration of Campaign is 119 days.</p>
+					</div>
+
+					<h3 class="blue faq-item-title">How can I participate?</h3>
+					<div>
+						<p class="main-text faq-item-text">It is very easy to join the campaign "SMS for million”.</p></br>
+							<p class="main-text faq-item-text"><span class="step">1</span>Send an SMS-message with the word "YES" to the number 900 (the cost of one SMS - 7,50 UAH inclusive all taxes.</p></br>
+							<p class="main-text faq-item-text"><span class="step">2</span>You will then receive a welcome message and the first 20 points.</p></br>
+							<p class="main-text faq-item-text"><span class="step">3</span>Next, you have to answer campaign questions, by sending SMS. Questions and answer choices will be given in the SMS. Choose your answer and send a number (1 or 2), which corresponds to the chosen answer to the number 900. The cost of one SMS - 7,50UAH inclusive all taxes.</p></br>
+							<p class="main-text faq-item-text"><span class="step">4</span>With each answer you will receive points. Even if you answer incorrectly, the given points will still increase your score.</p></br>
+							<p class="main-text faq-item-text"><span class="step">5</span>Continue to answer questions and gather points to get closer to victory! You can always win the grand prize - 1 000 000 UAH!</p>
+					</div>
+
+					<h3 class="blue faq-item-title">What are the prizes?</h3>
+					<div>
+						<p class="main-text faq-item-text"><b>Weekly Prizes:</b></br>
+						Two prizes – 100 000 UAH each – will be given to two participants of the campaign, accordingly to the Terms and Conditions.</p></br></br>
+						<p class="main-text faq-item-text"><b>Grand Prizes:</b></br>
+							1 000 000 UAH will be awarded to the winner of the campaign, according to its Terms and Conditions.</p>
+					</div>
+
+					<h3 class="blue faq-item-title">How will I know that I won an extra prize?</h3>
+					<div>
+						<p class="main-text faq-item-text">You will be informed via SMS during the campaign.</p>
+					</div>
+
+					<h3 class="blue faq-item-title">Can a winner of a prize win again another prize?</h3>
+					<div>
+						<p class="main-text faq-item-text">Each participant can receive one weekly prize, and become the owner of the Grand Prize. Thus, you can get 2 prizes - one from each category.</p>
+					</div>
+
+					<h3 class="blue faq-item-title">What is the Subscription service ?</h3>
+					<div>
+						<p class="main-text faq-item-text">By activating the “Subscription” service, you will receive additional points on daily basis, that will be added to your score and participate in the campaign.</p>
+					</div>
+
+					<h3 class="blue faq-item-title">How to activate the “Subscription” service?</h3>
+					<div>
+						<p class="main-text faq-item-text">Send a free SMS-message with the word "OK" to number 901 to order and activate the "Subscription" service. If activation is successful, you will get 1 free week, during which you will be awarded with additional points. Thanks to them, you will be able to accumulate more points and get closer to winning the Grand Prize and other prizes!</p>
+					</div>
+
+					<h3 class="blue faq-item-title">Service “Subscription” is available for free?</h3>
+					<div>
+						<p class="main-text faq-item-text">The free period lasts 7 days after service activation. During this period, you will get free points to increase the score to become a winner.</p>
+						<br />
+						<p class="main-text faq-item-text">7 days after the activation of "Subscription" service cost will become UAH 2.50 (inclusive all taxes) till 20.03.2016 inclusive, unless you unsubscribe from the service earlier. The service can also be extended and all the participants of the “Subscription” service will be informed via an SMS and on the campaign’s website.</p>
+					</div>
+
+					<h3 class="blue faq-item-title">How to opt-out from “Subscription” service?</h3>
+					<div>
+						<p class="main-text faq-item-text">You can disable the "Subscription" service by sending a free SMS with the word "STOP" to number 901.</p>
+					</div>
+
+					<h3 class="blue faq-item-title">I don't want to receive SMS with questions any more.</h3>
+					<div>
+						<p class="main-text faq-item-text">Send a free SMS with the word "STOP" to number 991 and you will no longer receive sms-messages with questions. Your points amount will no change, and you can still win prizes. You can restore participation in the campaign by sending SMS-messages to 900.</p>
+					</div>
+
+					<h3 class="blue faq-item-title">I am not a subscriber of Kyivstar, may I participate in the Campaign?</h3>
+					<div>
+						<p class="main-text faq-item-text">Participants of the campaign can only be Kyivstar subscribers. If you do not have a Kyivstar number yet, purchase a prepaid starter package and join the campaign. The first thing you have to do - send an SMS-message with the word «OK» to the number 900. Tthe cost of one SMS - 7,50 UAH inclusive all taxes.</p>
+					</div>
+
+					<h3 class="blue faq-item-title">How can I learn how many points I have collected so far?</h3>
+					<div>
+						<p class="main-text faq-item-text">To check the amount of points, just send the word “score” to 991, free of charge.</p>
+					</div>
+
+					<h3 class="blue faq-item-title">May I change the language of the messages?</h3>
+					<div>
+						<p class="main-text faq-item-text">For Ukrainian language, please send the word “UKR” to 991, free of charge. For Russian - the word “RUS”.</p>
+					</div>
+
+
+				</div>
+
+				<div class="clearfix"></div>
+
+			</div>
+			<!--faq-->
+
+			<footer>
+				<div class="footer">
+
+					<div class="footer-items">
+						<a href="http://www.kyivstar.ua" target="_blank">www.kyivstar.ua </a> |
+						<a href="docs/terms-en.pdf" target="_blank">Terms & Conditions  </a>
+					</div>
+
+				</div>
+
+				<div class="clearfix"></div>
+			</footer>
+
+
+			<p align="center" style="padding-bottom:5%;">
+					<span style=" color:#219FFF;">© Киевстар 2015, Все права защищены.</span>
+			</p>
+
+
+		</div>
+		<!--wrapper-container-->
+	</div>
+	<!--wrapper-->
+</body>
+
+</html>

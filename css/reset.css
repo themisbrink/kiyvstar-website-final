@@ -1,0 +1,282 @@
+/*   
+Theme Name: 
+Description: 
+Author: Maria Lagou
+Author URI: http://www.lagoumaria.com/
+Copyright: 
+*/
+
+/* Remove all browser styles
+-------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video, ui-message-error, ui-widget, ui-corner-all, ui-message-error-detail {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}									
+
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+object,
+embed {max-width: 100%;}
+
+img { height:auto; width:auto; }
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {overflow-y: scroll;}
+
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {content: ''; content: none;}
+
+a { text-decoration:none; margin:0px; padding:0px; font-size:100%;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+
+pre {
+	white-space: pre; /* CSS2 */
+	white-space: pre-wrap; /* CSS 2.1 */
+	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+	word-wrap: break-word; /* IE */
+}
+
+/* Accessible focus treatment for Mobile Opera */
+a, a:hover, a:active {outline:none;}
+
+small { font-size:85%;}
+
+/* Make sure sup and sub don't mess up our line-heights */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label, 
+input[type=button], 
+input[type=submit], 
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons work in IE */
+button {width:auto; overflow:visible;}
+ 
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode:bicubic;}
+
+/* prevent BG image flicker upon hover in IE */
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+/**/
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }  
+
+
+
+/* ------------------------------------------------------------------------------- */
+
+/* new Linux- and Windows-friendly sans-serif font stack */
+body {background:#EBEDEF; color:#FFFFFF; font:14px 'museo_sans_cyrl300', HelveticaNeue, Arial, Arial, Helvetica, sans-serif;}
+
+body, select, input, textarea {color:#EBEDEF; }
+
+a { color:#fff; text-decoration:none; }
+a:hover { color:#929FA7; text-decoration:none; }
+
+/* Custom text-selection colors (used to remove any unwanted text shadows */
+::-moz-selection{background:#00a7d4; color: #fff; text-shadow: none;}
+::selection {background:#00a7d4; color: #fff; text-shadow: none;} 
+
+/*	on tap IOS Highlight Colour */
+a:link { -webkit-tap-highlight-color:rgba(0,0,0,0); } 
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* ------------------------------ Fonts ----------------------------------------- */
+#current {color:#F27734;}
+
+.textn {font-weight:normal; font-family:Arial, Helvetica, sans-serif;}
+
+.textb {font-weight:bold;}
+
+.texti {font-style:italic;}
+
+.textc {text-align:center;}
+
+.textr {text-align:right;}
+
+.textl {text-align:left;}
+
+.textu {text-decoration:underline;}
+
+.texts {text-decoration:line-through}
+
+.text-change {text-transform:lowercase;}
+
+
+.white {color:#FFFFFF;}
+
+
+.hide {display:none;}
+
+
+ 
+.text1 {font-size:0.714em;}
+
+.text2 {font-size:0.786em;}
+
+.text3 {font-size:0.857em;}
+
+.text4 {font-size:1.000em;}
+
+.text5 {font-size:1.143em;}
+
+.text6 {font-size:1.286em;}
+
+.text7 {font-size:1.429em;}
+
+.text8 {font-size:1.571em;}
+
+.text9 {font-size:1.786em;}
+
+.text10 {font-size:2.143em;}
+
+.text11 {font-size:4.314em;}
+
+.clear {
+	clear:both; display:block; position:relative; width:100%; height:1px; margin-bottom:-1px;
+}
+
+.hidden {display:none;}
+
+.login-header {
+	position:relative; top:0px; left:0px; width:100%; max-height:123px; background:#404040; padding:0px; margin:0px;}
+
+.login-header:before, .login-header:after {
+	content:""; background:#404040; position:absolute; top:0; bottom:0; width:9999px;}
+
+.login-header:before {right: 100%;}
+
+.login-header:after {left: 100%;}
+
+.login-header:nth-of-type(1), .login-header:nth-of-type(1):before, .login-header:nth-of-type(1):after { 
+	background:#404040;}
+
+ <!-- transition:all 1s linear; -o-transition:all 1s linear; -moz-transition:all 1s linear;-->
+ 
+ 
+  /* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+
+}
+
+
+/* Media queries!
+-------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1122px) {
+
+}
+
+
+
+@media only screen and (max-width: 980px) {
+	.header ul a{padding-top:9% !important; padding-left:0% !important;}
+	.header li:first-child a{ margin-left:3% !important; }
+	.header li a {padding-left:1.6% !important;}
+
+}
+
+@media only screen and (max-width: 920px) {
+	
+			
+}
+	
+@media only screen and (max-width: 880px) {
+	.prizes-container li { width:100% !important; margin:8% 0% !important;}
+}
+
+/* Mobile */
+
+@media handheld, only screen and (max-width: 768px) {
+	
+}
+
+@media handheld, only screen and (max-width: 624px) {
+	.header ul a{ padding-top:15% !important; padding-left:0% !important;}
+	.header li:first-child a{ margin-left:3% !important; }
+	.header li a {padding-left:1.6% !important;}
+
+.lang { float:right; width:5% !important; margin-top:0.8%; }
+.lang p { float:left; margin-left:5%;}
+
+.prizes-container li { width:100% !important; margin:8% 0% !important;}
+
+.main-text-container { width:70% !important;}
+
+.participate-container { background-image:none !important;}
+
+}
+
+@media handheld, only screen and (max-width: 520px) {
+	
+}
+
+@media handheld, only screen and (max-width: 480px) {
+	
+}
+
+@media handheld, only screen and (max-width: 410px) {
+	.header ul a{ padding-top:20% !important; padding-left:0% !important;}
+	.header li:first-child a{ margin-left:3% !important; }
+	.header li a {padding-left:1.6% !important;}
+}
+
+@media handheld, only screen and (max-width: 350px) {
+	.lang { float:right !important; width:5% !important; margin-top:-5% !important; }
+.lang p { float:left; margin-right:3% !important;}
+
+}
+
+@media handheld, only screen and (max-width: 310px) {
+	
+}
+
+@media handheld, only screen and (max-width: 270px) {
+	
+}
+
+@media handheld, only screen and (max-width: 240px) {
+	
+}
+
+@media handheld, only screen and (max-width: 210px) {
+	
+}
+
+
+
+
+
+
